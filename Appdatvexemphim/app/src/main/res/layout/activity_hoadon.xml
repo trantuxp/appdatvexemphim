@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Hoadon"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarhoadon"
+        app:title="Hóa đơn"
+        android:background="#f60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên rạp: BHD Star Bitexco" />
+
+        <TextView
+            android:text="Địa chỉ rạp: L3-Bitexco Icon 68, 2 Hải Triều, Q.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Số điện thoại(Hotline): 1900 999 999 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Email: support@gmail.vn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txttenkhachhang"
+            android:layout_marginTop="10dp"
+            android:text="tên khách"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtsodtkhachhang"
+            android:text="số điện thoại: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtemailkhachhang"
+            android:text="Email:  "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:background="#f1f1f1">
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Tên phim "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Số vé"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Đơn giá"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Tổng cộng"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <ListView
+                android:id="@+id/listviewsanphammua"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txttongtientra"
+                android:textColor="#f20"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Tổng tiền cần trả: "
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Cảm ơn và hẹn gặp lại quý khách"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
