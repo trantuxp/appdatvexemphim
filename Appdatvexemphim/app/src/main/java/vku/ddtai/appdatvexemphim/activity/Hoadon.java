@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -26,6 +27,7 @@ public class Hoadon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoadon);
         Anhxa();
+        ActionBar();
         getThongtinkhach();
         getSanphammua();
         //get tong tien
@@ -34,6 +36,17 @@ public class Hoadon extends AppCompatActivity {
 
     }
 
+    private void ActionBar(){
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
     private void getThongtinkhach() {
         txttenkhach.setText("Tên khách hàng: "+Thongtinkhachhang.sessiontenkhachhang);
         txtsodtkhach.setText("Số điện thoại: "+Thongtinkhachhang.sessionsodtkhachhang);

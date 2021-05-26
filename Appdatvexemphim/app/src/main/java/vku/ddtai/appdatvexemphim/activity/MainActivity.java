@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 "https://mayhutbuithongminh.com/images/apps/icon/4-phim-anh.png"));
         mangloaisp.add(2,new Loaisp(2,"Phim sắp chiếu",
                 "https://lh3.googleusercontent.com/-JKb-keU4PjbwDmTP-0hm3aeK1lmq7p2c5eGg6tWN9hUpaSdXmeHg3FFV4SwUl0hbw"));
-        mangloaisp.add(3,new Loaisp(3,"Trang chính",
+        mangloaisp.add(3,new Loaisp(3,"Thông tin về chúng tôi",
                 "https://cdn1.vectorstock.com/i/1000x1000/14/50/info-button-vector-3701450.jpg"));
         loaispAdapter.notifyDataSetChanged();
     }
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         if (CheckConnection.haveNetworkConnection(getApplicationContext())){
-                            Intent intent = new Intent( MainActivity.this, MainActivity.class);
+                            Intent intent = new Intent( MainActivity.this, Thongtin.class);
                             startActivity(intent);
                         }else {
                             CheckConnection.ShowToast_Short(getApplicationContext(),"Bạn hãy kiểm tra lại kết nối");

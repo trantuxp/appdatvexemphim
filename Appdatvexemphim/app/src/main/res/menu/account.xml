@@ -5,7 +5,7 @@
     <item
         android:id="@+id/menutaikhoan"
         app:showAsAction="always"
-        android:title="Tên user" />
+        android:title="" />
 
 
 
